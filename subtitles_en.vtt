@@ -2,26 +2,41 @@ WEBVTT
 
 1
 00:00:00.000 --> 00:00:05.000
-I first got the example file on Github and cloned it to my VSCode.
+First I decided on projects to include.
 
 2
-00:00:06.000 --> 00:00:10.000
-Then i changed all of the values and images to my personal projects
+00:00:05.000 --> 00:00:10.000
+I then changed the id's, names and special images to match my items.
 
 3
-00:00:11.000 --> 00:00:15.000
-Next I added css and js functions
+00:00:10.000 --> 00:00:15.000
+Next I created my md files for the projects to have a Title, Date and Summary for each.
 
 4
-00:00:16.000 --> 00:00:19.000
-And voila! Theres my portfolio
+00:00:15.000 --> 00:00:30.000
+Then in the index.html, I reformatted the layout by removing itemsInner, and the following divs (moreLeft/Right and scrollLeft/Right) so the images displayed side by side and not under each other.
 
 5
-00:00:20.000 --> 00:00:23.000
-To see more please subscribe for email alerts!
+00:00:30.000 --> 00:00:45.000
+On the index.js page I keep everything similar for this block, except changing the name to my own in the page constructor.
 
 6
-00:00:20.000 --> 00:2:18.000
-To see more please subscribe for email updates!
+00:00:45.000 --> 00:01:00.000
+In the render function append an image and then for each image append a div to link to that item page, instead of appending links buttons and inner items.
 
+7
+00:01:01.000 --> 00:01:15.000
+Instead of adding list menu items in a loop and then having buttons for each, i just append each image and if you click on one it updates the item id title and class.
+
+8
+00:01:15.000 --> 00:01:30.000
+When creating the portfolio I kept the constructor and render the same.
+
+9
+00:01:30.000 --> 00:01:40.000
+For css I added img thumbnail to show as current image, and changed article items to flex and spread them out.
+
+10
+00:01:40.000 --> 00:01:45.000
+Formatting tables, text, footer and margins for final touches.
 
