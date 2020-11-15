@@ -1,21 +1,17 @@
 <!Doctype html>
+
 <head>
+
     <style>
         html{
             background: #557a95;
         }
         video{
-            margin-top: 7%;
             width: 50vw;
-            height: 30vw;
-            /* top: 25%; */
-
-            /* display:inline-block;margin-right:10px; */
+            height: 35vw;
+            display:inline-block;margin-right:10px;
             white-space: nowrap;
     overflow-x: auto;
-    /* border: 5px solid black; */
-            /* max-width: 100vw;
-            max-height: 100vh; */
         }
         input[type=text] {
   width: 100%;
@@ -30,7 +26,6 @@
 input[type=submit] {
   width: 100%;
   background-color: rgb(0, 64, 255);
-  /* background-color: #4CAF50; */
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -42,15 +37,13 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  /* background-color: #45a049; */
-  /* background-color: rgb(130, 161, 255); */
   background-color: rgb(0, 0, 0);
 
 }
 
 div {
   border-radius: 5px;
-  /* background-color: #f2f2f2; */
+   background-color: #f2f2f2; 
   background-color: #333333;
   border: 2px solid black;
   padding: 20px;
@@ -60,11 +53,11 @@ div {
   position: absolute;
   color:white;
 
-  top: 25%;
+  top: 15%;
   width:45%;
-  height: 45%;
+  height: 45%; 
 
-}
+} 
 h3{
 text-align: center;
 align-content: center;
@@ -78,7 +71,7 @@ text-align: center;
 align-content: center;
 align-items: center;
 color: white;
-font-size: 200%;
+font-size: 175%;
 
 }
 #emailAddress, #name{
@@ -89,7 +82,8 @@ form label{
     font-size: 125%;
     color:white;
 
-}
+} 
+
 img{width: 75%; 
     margin-left: 12.5%;
     }
@@ -100,39 +94,79 @@ img{width: 75%;
 
     </style>
 </head>
+
 <body>
+
     <h2>Assignment 4 - Portfolio Step by Step</h2>
-            <video loop autoplay muted controls="controls">
-            <source src="A4IntegratingVideo.mov"  type="video/mp4" />
-            <track kind="subtitles" src="subtitles_en.vtt" srclang="en" />
-        </video>
-        <div>
-            <h3>Subscribe For Email Updates!</h3>
-            <form id="myForm" action="thanks.html">
-                    <label for="name">Name:</label>
-                    <br>
-                    <input placeholder="John Doe" id="name" type="text">
-                    <br><br>
- 
-                <label for="emailAddress">Email Address:</label>
-                <br>
-                <input placeholder="johndoe@gmail.com" id="emailAddress" type="text">
-                <br><br>
-                <input type="submit" value="Subscribe">    
-            </form>
-        
+    <video loop autoplay muted controls="controls">
+        <source src="A4IntegratingVideo.mov" type="video/mp4" />
+        <track kind="subtitles" src="subtitles_en.vtt" srclang="en" />
+    </video>
+
+    <div>
+        <h3>Subscribe For Email Updates!</h3>
+        <form id="myForm" action="thanks.html">
+            <label for="name">Name:</label>
+            <br>
+            <input required placeholder="John Doe" id="name" type="text">
+            <br><br>
+            <label for="emailAddress">Email Address:</label>
+            <br>
+            <input required placeholder="johndoe@gmail.com" id="emailAddress" type="text">
+            <br><br>
+            <input type="submit" value="Subscribe">
+        </form>
     </div>
-    <h3>Steps to Recreate:</h3>
+
+    <!-- This Mailchimp Works, I added 4 Subscribers already, but i cant seem to redirect it to my custom thank you page -->
+
+    <!-- <h2>Subscribe for Updates with MailChimp</h2>
+
+<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+	/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+<div id="mc_embed_signup">
+<form action="https://conestogac.us7.list-manage.com/subscribe/post?u=3df22172603703e4ccee6a990&amp;id=ae05e25c97" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<h2>Subscribe for Updates</h2>
+<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+<div class="mc-field-group">
+	<label for="mce-FNAME">Name  <span class="asterisk">*</span>
+</label>
+	<input type="text" value="" name="FNAME" class="required" id="mce-FNAME">
+</div>
+<div class="mc-field-group">
+	<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+</label>
+	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+</div>
+	<div id="mce-responses" class="clear">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
+	</div>    
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_3df22172603703e4ccee6a990_ae05e25c97" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+    </div>
+</form>
+</div>
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[1]='FNAME';ftypes[1]='text';fnames[0]='EMAIL';ftypes[0]='email';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+End mc_embed_signup-->
+
+
+    <h2>Steps to Recreate:</h2>
     <ol>
-     <li>Decide on Projects</li>
-     <li>Change pages in Items/index.js to your own id, names and images</li>
-     <li>Create md pages for those item pages</li>
-     <li>Change index.html to only have current, items and pages instead of scroll and inners</li>
-     <li>Change index.js to append images and page divs rather than menu items</li>
-     <li>Change css to allow for current image to display and style borders, margins, fonts and tables</li>
-</ol>  
+        <li>Decide on Projects</li>
+        <li>Change pages in Items/index.js to your own id, names and images</li>
+        <li>Create md pages for those item pages</li>
+        <li>Change index.html to only have current, items and pages instead of scroll and inners</li>
+        <li>Change index.js to append images and page divs rather than menu items</li>
+        <li>Change css to allow for current image to display and style borders, margins, fonts and tables</li>
+    </ol>
     <br>
-    <h3>Final Result</h3>
+    <h2>Final Result</h2>
     <img src="a4Img1.png" alt="top half of portfolio">
     <img src="a4Img2.png" alt="top half of portfolio">
 </body>
