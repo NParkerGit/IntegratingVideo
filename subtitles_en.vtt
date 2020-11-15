@@ -26,7 +26,7 @@ In the render function append an image and then for each image append a div to l
 
 7
 00:01:01.000 --> 00:01:15.000
-Instead of adding list menu items in a loop and then having buttons for each, i just append each image and if you click on one it updates the item id title and class.
+Instead of adding list menu items in a loop and then having buttons for each, i just append each image and if you click on one it updates the items id, title and class.
 
 8
 00:01:15.000 --> 00:01:30.000
